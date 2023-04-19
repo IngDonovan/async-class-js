@@ -30,3 +30,12 @@ function gretting(name) {
 }
 
 setTimeout(gretting, 2000, 'Oscar');
+
+
+const myFunc = () => console.log('Log after 2s')
+execCallback(myFunc);
+
+function execCallback(callback) {
+    // Tu código aquí 👈
+    return setTimeout(callback, 2000);
+  };
