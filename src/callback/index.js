@@ -32,7 +32,7 @@ function gretting(name) {
 setTimeout(gretting, 2000, 'Oscar');
 
 
-const myFunc = () => console.log('Log after 2s')
+const myFunc = () => console.log('Log after 2s');
 execCallback(myFunc);
 
 function execCallback(callback) {
