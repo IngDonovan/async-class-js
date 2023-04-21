@@ -16,3 +16,18 @@ countCows.then((result)=> {
 }).catch((error) => {
     console.log(error);
 }).finally(() => console.log('Finally'));
+
+
+
+function delay(time, message) {
+    // Tu código aquí 👈
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(message);
+      }, time);
+  
+    });
+  }
+
+delay(2000, "Hello after 2s")
+.then((message) => console.log(message));
