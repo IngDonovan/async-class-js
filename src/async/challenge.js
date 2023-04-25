@@ -22,3 +22,16 @@ const anotherFunction = async (urlApi) => {
 }
 
 anotherFunction(API);
+
+
+
+async function runCode() {
+    // Tu código aquí 👈
+    const url = 'https://domain-api-com';
+    try {
+      return await fetch(url);
+    } catch {
+      throw new Error('API Not Found');
+    }
+  }
+runCode();
