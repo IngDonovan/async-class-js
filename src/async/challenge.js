@@ -35,3 +35,24 @@ async function runCode() {
     }
   }
 runCode();
+
+//otro ejercicio
+
+async function runCode(url) {
+  // Tu código aquí 👈
+  if (url.substring(0, 8) != "https://") {
+    throw new Error('Invalid URL');
+  } else {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      return data;
+    } catch {
+      throw new Error('Something was wrong');
+    }
+  }
+}
+
+await fetchData('https://api.escuelajs.co/api/v1/categories');
+
+
